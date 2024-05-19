@@ -6,22 +6,129 @@
     <title>Portfolio | Prashant Agrawal</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/936ef4fdd5.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-black text-white">
-    <header class="w-[100%] h-[100vh]">
-        <nav class="flex justify-between items-center mt-4 ml-16 mr-16">
-            <p class="Logo text-[2rem]"> <span class="text-red-600">P</span>rashant</p>
+<body class="bg-black text-white font-new">
+    <header>
+        <nav class="flex justify-between items-center mt-4 mb-4 ml-12 mr-16">
+            <p class="Logo text-[2rem] font-bold font-new"><span class="text-red-600 font-new">P</span>rashant</p>
             <ul class="flex justify-evenly gap-10">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact Me</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact Me</a></li>
             </ul>
         </nav>
-        
     </header>
+
+    <main>
+        <div class="firstsection flex justify-around items-center mt-12">
+            <div class="leftsection pl-[18rem]">
+                <span id="element" class="font-serif text-[1.21rem] text-[#ff004f]">UI/UX Designer</span>
+                <p class="font-roboto text-[2.5rem] font-bold">Hi, I'm <span class="text-[#ff004f]">Prashant</span></br>Agrawal From INDIA</p>
+            </div>
+            <div class="rightsection right-0 flex justify-center items-center">
+                <!-- <img src="photo-removebg-preview.png" class="w-[90%]"> -->
+                <img src="photo3.jpeg" class="w-[100vh] flex justify-start items-center">
+            </div>
+        </div>
+    </main>
+
+    <div class="about">
+        <div class="container flex justify-between flex-wrap">
+            <div class="left ml-12">
+                <img src="photo.jpeg" class="w-[50vh] h-[70vh] rounded-[1rem]">
+            </div>
+            <div class="right">
+                <div class="text-[3rem] font-bold">About Me</div>
+                <p class="text-[#ababab]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptate velit tenetur fuga dolor blanditiis exercitationem et error. Facere quibusdam, porro culpa repellat maiores nam quam delectus tenetur fugit, ipsa debitis numquam suscipit dicta molestias in dolores quia voluptas ea eum ducimus dolorem atque inventore?</p>
+
+                <div class="titles mt-9 flex gap-x-16 text-[18px] text-[#ababab] font-bold cursor-pointer">
+                    <div class="link activelink relative">Skills</div>
+                    <div class="link relative">Experience</div>
+                    <div class="link relative">Education</div>
+                </div>
+                <div class="contents skill active-tab mt-10 text-[#ababab]">
+                    <ul class="list-disc">
+                        <li><span class="text-[0.8rem] text-[#b54769]">UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span class="text-[0.8rem] text-[#b54769]">Web Devops</span><br>Web Development</li>
+                    </ul>
+                </div>
+                <div class="contents experience mt-10 text-[#ababab]">
+                    <ul class="list-disc">
+                        <li><span class="text-[0.8rem] text-[#b54769]">2022 - Current</span><br>Designing Web/App interfaces</li>
+                        <li><span class="text-[0.8rem] text-[#b54769]">2022 - Current</span><br>Web App Development</li>
+                    </ul>
+                </div>
+                <div class="contents education mt-10 text-[#ababab]">
+                    <ul class="list-disc">
+                        <li><span class="text-[0.8rem] text-[#b54769]">UI/UX</span><br>Indian Institute of information and Technology, Allahabad</li>
+                        <li><span class="text-[0.8rem] text-[#b54769]">Web Development</span><br>Indian Institute of information and Technology, Allahabad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services ml-12">
+        <div class="container">
+            <div class="sub-title text-[3rem] font-bold">My Services</div>
+            <div class="service-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2 class="text-3xl font-bold mb-3">Web Designer</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos accusamus blanditiis, illum ab, placeat ratione omnis officiis magnam maiores molestiae provident odio, adipisci corrupti alias quae. Consectetur labore facere quasi.</p>
+                    <a href="#" class="mt-7 inline-block">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2 class="text-3xl font-bold mb-3">UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos accusamus blanditiis, illum ab, placeat ratione omnis officiis magnam maiores molestiae provident odio, adipisci corrupti alias quae. Consectetur labore facere quasi.</p>
+                    <a href="#" class="mt-7 inline-block">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio" class=" ml-12">
+        <div class="container">
+            <h1 class="sub-title text-[3rem] font-extrabold">My Work</h1>
+            <div class="work-list">
+                <div class="work w-[40vh]">
+                    <img src="ux.jpeg" class="h-[50vh]">
+                    <div class="layer">
+                        <h3 class="text-xl">Social Media App</h3>
+                        <p>This app conncets you the talented people around tge world. Download it from Play Store</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work w-[40vh]">
+                    <img src="web.jpg" class="h-[50vh]">
+                    <div class="layer">
+                        <h3 class="text-xl">Music App</h3>
+                        <p>This app conncets you the talented people around tge world. Download it from Play Store</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work w-[40vh]">
+                    <img src="dev.webp" class="h-[50vh]">
+                    <div class="layer">
+                        <h3 class="text-xl">Online Shoping Website</h3>
+                        <p>This app conncets you the talented people around tge world. Download it from Play Store</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <button>See More</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
