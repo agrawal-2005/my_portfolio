@@ -6,6 +6,7 @@ var typed = new Typed('#element', {
 // Assuming you have already defined `links` and `contents`
 const links = document.querySelectorAll('.link');
 const contents = document.querySelectorAll('.contents');
+const msg = document.querySelector('.msg');
 
 links.forEach((link, index) => {
   link.addEventListener('click', () => {
@@ -34,6 +35,15 @@ const form = document.forms['submit-to-google-sheet']
 form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => console.log('Success!', response))
+    .then(response => {
+        msg.innerText = "Message sent Successfully";
+        setTimeout(function() {
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset();
+        setTimeout(function() {
+            msg.innerText = "Send Your New Message";
+        }, 2000)
+    })
     .catch(error => console.error('Error!', error.message))
 })
