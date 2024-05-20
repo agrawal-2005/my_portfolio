@@ -12,61 +12,64 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/936ef4fdd5.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-black text-white font-new">
+<body class="bg-black text-white">
     <header>
         <nav class="flex justify-between items-center mt-4 mb-4 ml-12 mr-16">
             <p class="Logo text-[2rem] font-bold font-new"><span class="text-red-600 font-new">P</span>rashant</p>
-            <ul class="flex justify-evenly gap-10">
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Services</a></li>
-                <li><a href="/">Projects</a></li>
-                <li><a href="/">Contact Me</a></li>
+            <ul id="menu" class="z-10 grow duration-200 flex justify-end gap-3 md:gap-9 absolute md:relative flex-col md:flex-row right-[-100%] w-[20%] items-center h-[15rem] md:h-[3rem] pb-10 md:pb-0 top-20 md:top-0 md:right-[inherit] backdrop-blur-sm rounded-sm text-white md:bg-transparent">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
             </ul>
+            <div id="menuToggle" class="text-3xl cursor-pointer md:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </nav>
     </header>
 
     <main>
-        <div class="firstsection flex justify-around items-center mt-12">
-            <div class="leftsection pl-[18rem]">
-                <span id="element" class="font-serif text-[1.21rem] text-[#ff004f]">UI/UX Designer</span>
-                <p class="font-roboto text-[2.5rem] font-bold">Hi, I'm <span class="text-[#ff004f]">Prashant</span></br>Agrawal From INDIA</p>
+        <div class="firstsection flex justify-evenly items-center mt-12">
+            <div class="leftsection md:pl-[18rem] pl-[12rem] relative md:top-[30px] md:right-[70px] top-[130px] right-[56px]">
+                <span id="element" class="font-serif md:text-[1.2rem] text-[0.8rem] text-[#ff004f]">UI/UX Designer</span>
+                <p class="font-roboto md:text-[2.5rem] text-[1.2rem] font-bold">Hi, I'm <span class="text-[#ff004f]">Prashant</span></br>Agrawal From INDIA</p>
             </div>
-            <div class="rightsection right-0 flex justify-center items-center">
+            <div class="md:w-[80vh] md:h-[85vh] w-[40vh] h-[45vh] rightsection md:right-0 right-40 md:z-0 -z-10 flex justify-center items-center relative">
                 <!-- <img src="photo-removebg-preview.png" class="w-[90%]"> -->
-                <img src="photo3.jpeg" class="w-[100vh] flex justify-start items-center">
+                <img src="photo1.jpeg" class="md:w-[80vh] md:h-[85vh] w-[60vh] flex justify-start items-center">
             </div>
         </div>
     </main>
 
     <div class="about">
-        <div class="container flex justify-between flex-wrap">
-            <div class="left ml-12">
-                <img src="photo.jpeg" class="w-[50vh] h-[70vh] rounded-[1rem]">
+        <div class="container ml-12 flex items-center justify-between gap-x-16 mt-20 md:w-[100%] w-[90%] md:h-[100%] h-[60%]">
+            <div class="left md:w-[60vh] md:h-[60vh] w-[50vh] h-[30vh] flex justify-center items-center">
+                <img src="photo.jpeg" class="md:h-[60vh] w-[50vh] h-[30vh] rounded-xl">
             </div>
-            <div class="right">
-                <div class="text-[3rem] font-bold">About Me</div>
+            <div class="right w-[70%] h-[90%]">
+                <h1 class="text-[3rem] font-bold">About Me</h1>
                 <p class="text-[#ababab]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptate velit tenetur fuga dolor blanditiis exercitationem et error. Facere quibusdam, porro culpa repellat maiores nam quam delectus tenetur fugit, ipsa debitis numquam suscipit dicta molestias in dolores quia voluptas ea eum ducimus dolorem atque inventore?</p>
 
-                <div class="titles mt-9 flex gap-x-16 text-[18px] text-[#ababab] font-bold cursor-pointer">
+                <div class="titles mt-12 flex gap-x-16 text-[18px] text-[#ababab] font-bold cursor-pointer">
                     <div class="link activelink relative">Skills</div>
                     <div class="link relative">Experience</div>
                     <div class="link relative">Education</div>
                 </div>
-                <div class="contents skill active-tab mt-10 text-[#ababab]">
-                    <ul class="list-disc">
+                <div class="contents skill active-tab text-[#ababab]">
+                    <ul class="mt-6">
                         <li><span class="text-[0.8rem] text-[#b54769]">UI/UX</span><br>Designing Web/App interfaces</li>
                         <li><span class="text-[0.8rem] text-[#b54769]">Web Devops</span><br>Web Development</li>
                     </ul>
                 </div>
-                <div class="contents experience mt-10 text-[#ababab]">
-                    <ul class="list-disc">
+                <div class="contents experience text-[#ababab]">
+                    <ul class="mt-6">
                         <li><span class="text-[0.8rem] text-[#b54769]">2022 - Current</span><br>Designing Web/App interfaces</li>
                         <li><span class="text-[0.8rem] text-[#b54769]">2022 - Current</span><br>Web App Development</li>
                     </ul>
                 </div>
-                <div class="contents education mt-10 text-[#ababab]">
-                    <ul class="list-disc">
+                <div class="contents education text-[#ababab]">
+                    <ul class="mt-6">
                         <li><span class="text-[0.8rem] text-[#b54769]">UI/UX</span><br>Indian Institute of information and Technology, Allahabad</li>
                         <li><span class="text-[0.8rem] text-[#b54769]">Web Development</span><br>Indian Institute of information and Technology, Allahabad</li>
                     </ul>
@@ -78,7 +81,7 @@
     <div class="services ml-12">
         <div class="container">
             <div class="sub-title text-[3rem] font-bold">My Services</div>
-            <div class="service-list">
+            <div class="ml-20 service-list flex items-center mt-9 md:flex-row flex-col gap-5 md:gap-x-10">
                 <div>
                     <i class="fas fa-code"></i>
                     <h2 class="text-3xl font-bold mb-3">Web Designer</h2>
@@ -95,10 +98,10 @@
         </div>
     </div>
 
-    <div id="portfolio" class=" ml-12">
-        <div class="container">
-            <h1 class="sub-title text-[3rem] font-extrabold">My Work</h1>
-            <div class="work-list">
+    <div class="portfolio">
+        <div class="container p-12">
+            <h1 class="sub-title text-[3rem] font-bold">My Work</h1>
+            <div class="worklist flex items-center justify-center mt-9 md:gap-12 gap-6 md:flex-row flex-col ml-40">
                 <div class="work w-[40vh]">
                     <img src="ux.jpeg" class="h-[50vh]">
                     <div class="layer">
@@ -124,15 +127,16 @@
                     </div>
                 </div>
             </div>
-            <button class="btn">See More</button>
+            <div class="flex justify-center items-center ml-40">
+                <button class="btn">See More</button>
+            </div>
         </div>
     </div>
-
     <!--Contact-->
     <div class="contact ml-12 p">
         <div class="container flex justify-evenly">
             <div class="contact-left">
-                <h1 class="sub-title text-[3rem] font-bold">Contact Me</h1>
+                <h1 class="sub-title md:text-[3rem] text-[2.5rem] font-bold">Contact Me</h1>
                 <p><i class="fas fa-paper-plane"></i>agrawalprashant906@gmail.com</p>
                 <p><i class="fas fa-phone-square-alt"></i>0123456789</p>
                 <div class="social-icon">
@@ -144,16 +148,16 @@
                 <a href="Prashant_SOP.pdf" class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
             </div>
         </div>
     </div>
-    <div class="copyright">
+    <div class="copyright w-[100%]">
         <p>Copyright © Prashant. Made with <i class="fas fa-heart text-[#ff004f]"></i> Heart</p>
     </div>
     
